@@ -3,25 +3,26 @@
 #include "main.h"
 
 /**
-* print_most_numbers - prints number 0 to 9 except 2 & 4
+* more_numbers - prints 10 times the numbers, from 0 to 14
 *
 * Return: void
 */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i;
+	int j;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 0; i < 10; i++)
 	{
-		if (i == 50 || i == 52)
+		for (j = 0; j <= 14; j++)
 		{
-			continue;
+			if (j >= 10)
+			{
+				putchar(j / 10 + '0');
+			}
+			putchar(j % 10 + '0');
 		}
-		else
-		{
-			putchar(i);
-		}
+		putchar('\n');
 	}
-	putchar('\n');
 }
