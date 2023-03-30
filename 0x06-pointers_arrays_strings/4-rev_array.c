@@ -3,18 +3,23 @@
 #include "main.h"
 
 /**
-* _strncpy - copies one string to another
+* reverse_array - reverses given array
 *
-* @dest: destination string to be copied to
-* @src: source string to copy from
-* @n: number indicating how many bytes to copy from src
+* @a: array to be reversed
+* @n: number of elements in the array
 *
-* Return: copied string from src string
+* Return: void
 */
 
-char *_strncpy(char *dest, char *src, int n)
+void reverse_array(int *a, int n)
 {
-	strncpy(dest, src, n);
+	int temp;
+	int i;
 
-	return (dest);
+	for (i = 0; i < n / 2; i++)
+	{
+		temp = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = temp;
+	}
 }
