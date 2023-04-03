@@ -5,7 +5,7 @@
 
 /**
 * _memcpy - copies bytes of data from one address to another
-*
+
 * @dest: memory (address) to be filled
 * @src: memory to be copied from
 * @n: the first bytes of data to be copied from src
