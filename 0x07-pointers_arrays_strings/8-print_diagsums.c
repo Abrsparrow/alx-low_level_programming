@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include <"main.h>
+#include "main.h"
 
 /**
 * print_diagsums - prints given chessboard
