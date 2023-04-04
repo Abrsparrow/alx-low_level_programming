@@ -2,15 +2,17 @@
 #include <string.h>
 #include <ctype.h>
 #include <"main.h>
+
 /**
- * print_diagsums - prints the sum of the two diagonals of a square
- * matrix of integers
- *
- * @a: the name of the array
- * @size: the size of the array
- *
- * Return: nothing
- */
+* print_diagsums - prints given chessboard
+*
+* @a: array of 8 by 8 to be printed
+* @size: size of the square array
+*
+* Return: void
+*/
+
+
 void print_diagsums(int *a, int size)
 {
 	int i = 0;
