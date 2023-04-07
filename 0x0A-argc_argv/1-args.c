@@ -8,9 +8,10 @@
  *
  * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-    int count = argc - 1;
-    printf("%d\n", count);
-    return 0;
+	putchar(48 + (argc - 1));
+	putchar('\n');
+
+	return (0);
 }
