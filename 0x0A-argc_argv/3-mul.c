@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -22,6 +24,8 @@ void print_number(int n)
 	}
 	putchar(n % 10 + '0');
 }
+
+
 /**
 * main - Entree point, prints out all arguments of program
 *
