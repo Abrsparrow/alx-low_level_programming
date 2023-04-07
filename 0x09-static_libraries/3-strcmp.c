@@ -1,23 +1,14 @@
 #include "main.h"
 /**
- * _strcmp - compare string values
- * @s1: input value
- * @s2: input value
- *
- * Return: s1[i] - s2[i]
- */
+* _strcmp - copies one string to another
+*
+* @s1: destination string to be copied to
+* @s2: source string to copy from
+*
+* Return: copied string from src string
+*/
+
 int _strcmp(char *s1, char *s2)
 {
-	int i;
-
-	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0')
-	{
-		if (s1[i] != s2[i])
-		{
-			return (s1[i] - s2[i]);
-		}
-	i++;
-	}
-	return (0);
+	return (strcmp(s1, s2));
 }
