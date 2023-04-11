@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 #include <stdlib.h>
 /**
  * argstostr - main entry
@@ -38,4 +38,3 @@ char *argstostr(int ac, char **av)
 	}
 	return (str);
 }
-
