@@ -8,8 +8,7 @@ int f2(const char*, int);
 int f3(const char*, int);
 int f4(const char*, int);
 int f5(const char*, int);
-int f6(const char*);
-
+int f6(const char* );
 
 /**
  * main - crackme5 keygen generator
